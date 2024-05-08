@@ -1,0 +1,537 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans.eot?#iefix') format('embedded-opentype'),  url('../fonts/OpenSans.woff') format('woff'), url('../fonts/OpenSans.ttf')  format('truetype'), url('../fonts/OpenSans.svg#OpenSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/Montserrat-Bold.otf')  format('opentype'),
+	     url('../fonts/Montserrat-Bold.woff') format('woff'), url('../fonts/Montserrat-Bold.ttf')  format('truetype'), url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.ttf')  format('truetype'), url('../fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-ExtraBold';
+  src: url('../fonts/Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),  url('../fonts/Raleway-ExtraBold.woff') format('woff'), url('../fonts/Raleway-ExtraBold.ttf')  format('truetype'), url('../fonts/Raleway-ExtraBold.svg#Raleway-ExtraBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('../fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/Raleway-Bold.woff') format('woff'), url('../fonts/Raleway-Bold.ttf')  format('truetype'), url('../fonts/Raleway-Bold.svg#Raleway-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway.eot?#iefix') format('embedded-opentype'),  url('../fonts/Raleway.woff') format('woff'), url('../fonts/Raleway.ttf')  format('truetype'), url('../fonts/Raleway.svg#Raleway') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  src: url('../fonts/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),  url('../fonts/Raleway-SemiBold.woff') format('woff'), url('../fonts/Raleway-SemiBold.ttf')  format('truetype'), url('../fonts/Raleway-SemiBold.svg#Raleway-SemiBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url('../fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),  url('../fonts/Raleway-Medium.woff') format('woff'), url('../fonts/Raleway-Medium.ttf')  format('truetype'), url('../fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.container{width:767px;}
+a:hover, a:active, a:focus, button:hover, button:focus, button:active{ text-decoration:none; outline:none; box-shadow:none;}
+
+body{font-family: 'Montserrat-Regular'; padding:0 !important; max-width: 1440px !important; margin: 0 auto;}
+/*body.modal-open { overflow: hidden; position: fixed; top: 0; bottom: 0; left: 0; right: 0;}*/
+#test-drive, .more-info { overflow-y: scroll;}
+header {background: #fafafa; padding:12px 0;}
+.logo {width: 120px; float: left;}
+div.wh-widget-send-button-wrapper div.wh-widget-send-button-wrapper-list a.wh-widget-send-button-get-button{ font-size: 0px !important;}
+.menu_area {width: 84%; float: left;}
+button.toogle { display: none;}
+.menu_area nav ul li a {display: block; color: #575757; text-transform: uppercase; transition:0.3s ease; font-size:12px;}
+.menu_area nav ul li a:hover{ color:#00b2df;}
+.menu_area nav ul li { display: inline-block; padding: 10px 3px;}
+.menu_area nav ul { list-style: none; padding: 0; margin: 0; text-align:right;}
+
+/*banner*/
+.banner_content {position: absolute;  text-align: center; top:61px; left: 0; right: 0;}
+.banner {position: relative; max-height: 600px; overflow: hidden;}
+div#home.banner { max-height: inherit !important;}
+.banner_img img{ margin:0 auto; margin-top: 0px!important; }
+.banner_content h1 { color: #fff; font-family: 'Raleway-ExtraBold'; font-size: 24px; margin: 0; padding: 40px 0;}
+.browse_car { display: none; width: 185px;  height: 50px;  text-align: center;  line-height: 50px;  color: #00b2df;  background: #fff;   border-radius: 100px;  font-size: 12px; transition:0.3s ease; position:relative; z-index:0; overflow:hidden;}
+.browse_car:after{ position:absolute; content:''; height:100%; width:100%; top:0; left:-100%; background:#00b2df; transition:0.3s ease; z-index:-1;}
+.browse_car:hover{ color:#fff;}
+.browse_car:hover:after{left:0;}
+.banner_content ul li {display: inline-block; padding: 0 5px;}
+.banner_content ul {list-style: none; padding: 0; margin: 0;}
+.white-btn {margin: 10px auto; display: block; max-width: 140px; height: 38px;line-height: 38px; background: #fff; border-radius: 100px; text-transform:uppercase; font-size: 12px; font-family: 'Montserrat-Bold';}
+.number i {padding: 0 5px; font-size: 20px; color:#fff;}
+.browse_car i {font-size: 18px; padding: 0 5px;}
+.heading { text-align: center;}
+.heading a {display: inline-block; height: 50px; line-height: 46px; border:3px solid #10417c; border-radius: 3px; font-size: 20px; color: #10417c;    font-family: 'Raleway-Bold'; padding: 0 40px; margin: 0 auto; text-align:center; margin-bottom: 60px;}
+.cars_on_leas {padding: 60px 0 0;}
+.address li a {display: inline-block; color:#fff; font-family: 'Montserrat-Bold';}
+ul.address {display: inline-block; list-style: none; padding: 0; margin: 0 0 20px 0; background: #00b2df; position:relative; z-index:0;}
+ul.address:after {position: absolute;  content: '';  height: 50px; width: 48px; background: #00b2df; left: -20px;  top: 0;  z-index: -1; transform: skewX(33deg);}
+ul.address:before {position: absolute;  content: '';  height: 50px; width: 48px; background: #00b2df; right: -20px;  top: 0;  z-index: -1; transform: skewX(-33deg);}
+ul.address li { display: inline-block; padding: 14px; border-right: 1px solid #2bbfe4; color:#fff; font-size:12px;}
+ul.address li i { font-size: 20px;  padding: 0 5px;}
+ul.address li:last-child{ border:0;}
+/*end*/
+
+/*cars*/
+.leasing_car.active {border: 1px solid #dbdbdb; text-align: center;}
+.leasing_car.active:after {content: ''; height: 100%; WIDTH: 100%; background: rgba(16,65,124,0.9); top: 0; bottom: 0; left: 0; position: absolute; right: 0; z-index:0;}
+.leasing_car.active {background: url(../images/car1.jpg); position: relative; border: 1px solid #dbdbdb; text-align: center; color:#fff;}
+.price h4 {font-size: 18px; text-transform: uppercase; font-family: 'Montserrat-Bold'; margin:0 auto; padding: 30px 0 0 0;}
+.leasing_car {border: 1px solid #dbdbdb; text-align: center; box-shadow: 0px 5px 5px #eee; height: 390px; display: table; width: 100%; margin: 10px auto;}
+.available-cars-content h4 {font-size: 20px; color: #10417c; text-transform: uppercase; font-family: 'Montserrat-Bold';}
+.see-available-cars a { display: block; width: 200px; height: 40px; text-align: center; line-height: 40px; background: #9bd5bf; color: #fff;    text-transform: uppercase; font-size: 12px; vertical-align: middle; border-radius: 4px; font-family: 'Montserrat-Bold'; padding: 0; margin: 0 auto;}
+.see-available-cars a span img {width: 100%;}
+.see-available-cars a span {vertical-align: top; padding: 0 5px; max-width: 30px; display: inline-block;}
+.platinum-content p strong {display: block;font-size: 25px; font-family: 'Raleway-Bold';}
+.platinum-content p { font-size: 14px; color: #fff; font-family: 'Raleway';}
+.platinum-content {position: absolute; top: 0; bottom: 0; text-align: center; padding: 0 20px; height: 100px; margin: auto; left: 0; right: 0;}
+.see-available-cars { padding: 20px 0;}
+.available-cars { padding-bottom: 50px;}
+.price {position: relative; z-index: 1;}
+.price p span {display: inline-block; text-align: left; padding: 0 1px;}
+.price p span b {display: block; font-family: 'Montserrat-Bold'; font-size: 16px; line-height: 10px;}
+.price p {color: #9bd5bf; padding: 15px 0; margin:0 auto;}
+.price p .amount {font-size: 25px; font-family: 'Montserrat-Bold';}
+.car_img img { margin: 0 auto;}
+.car_img {position: relative; z-index: 1; text-align: center; height:130px;}
+.book_now {position: relative; z-index: 1; padding:25px 0;}
+.book_now p {font-size: 16px;}
+.book_now a {display: block; width: 156px; text-align: center; margin: 0 auto; height: 42px; line-height: 39px; border: 2px solid #9bd5bf; color: #9bd5bf; border-radius: 25px;}
+.leasing_car_content h3 { font-size: 31px;  color: #fff; font-family: 'Raleway-Bold'; margin: 0;  padding: 10px 0;}
+.leasing_car_content p {margin: 0; color: #fff; font-size: 18px; font-family: 'Raleway'; padding: 10px 5px;}
+.leasing_car_content a {margin: 10px auto;}
+.leasing_car_content a i {color: #fff; font-size: 20px; padding: 0 5px;}
+.leasing_car_content {display: table-cell; vertical-align: middle; background: url(../images/car_03.jpg) no-repeat; background-size: cover;}
+.price p sup {color: #8b9ab4; font-size: 14px; vertical-align: top; font-family: 'Raleway-SemiBold'; top:10px; padding-right:5px;}
+.platinum_car h4 {font-size: 24px; text-transform: uppercase; color: #10417c; font-family: 'Montserrat-Bold';}
+.platinum_car > p {margin: 0; color: #10417c; font-size: 16px;}
+.platinum_car > a {display: block; width: 156px; text-align: center; margin: 20px 0; height: 42px; line-height: 39px; border: 2px solid #9bd5bf; color: #9bd5bf; border-radius: 25px;}
+.platinum_vehicle { position:relative;}
+.platinum_vehicle img {width: 100%;}
+.contact_btn {display: block;width: 160px; text-align: center; margin: 0 auto; height: 40px; line-height: 40px; background: #9bd5bf; color: #fff;    border-radius: 35px; font-size: 14px;}
+.section_content h3 {color: #667e8e; text-align: center; margin: 0; padding: 30px 0; clear: both; font-size:18px;}
+.contact_btn:hover, .contact_btn:active, .contact_btn:focus{ text-decoration:none; color:#fff;}
+/*end*/
+/*cars gallery*/
+.cars-gallery { background: #f3f3f3;  padding: 60px 0;}
+.cars { min-height: 325px; position: relative; margin: 15px 1px; display: inline-block;}
+.car-title h5 { margin: 0;  font-size: 10px; text-transform: uppercase; color: #fff; background-image: url(../images/bg.png); padding: 10px;}
+.car-title { position: absolute;  top: -10px;  left: -10px; z-index:1;}
+.car-img img { width: 100%;}
+.cars-content { background: #fff;  box-shadow: 0 5px 10px rgba(0,0,0,0.1); display: table; width: 100%;}
+.months, .price-refund { display: table; width: 100%;}
+.months ul li { width: 33.333%; float: left; text-align:center; padding:11px 0; border-right:1px solid #dbe3eb;}
+.months ul li p, .price-refund ul li p { color: #667e8e; margin: 0; font-size:10px;}
+.months ul, .price-refund ul { list-style: none;  padding: 0; margin: 0;}
+.months ul li p strong, .price-refund ul li p strong { color: #9bd5bf; font-size: 14px; font-family: 'Montserrat-Bold';}
+.price-refund ul li { width: 100%; text-align: center; padding:10px 0; border-bottom:1px solid #dbe3eb;}
+.price-refund ul li:last-child, .months ul li:last-child{ border:none;}
+.price-refund { border-top: 1px solid #dbe3eb; border-bottom: 1px solid #dbe3eb;}
+.test-btn span img {width: 100%;}
+.test-btn span {display: inline-block; padding: 0 0px; width: 14px;}
+.test-btn { width: 100%; max-width: 320px; display: block; text-align: center; height: 40px; line-height: 40px; border: 1px solid #10417c; text-transform: uppercase; color: #10417c; font-family: 'Montserrat-Bold'; border-radius: 100px; position: relative; overflow: hidden; z-index: 0; transition: 0.3s ease; margin:0 auto; font-size: 10px;}
+.drive-btn { padding: 20px;}
+.test-btn:after {position: absolute; content: ''; height: 100%; width: 100%; background: #f1f1f1; top: -100%; right: 0; z-index: -1; transition: 0.3s ease;}
+.test-btn:hover:after{ top:0;}
+.cars-hover i { font-size: 40px;}
+.cars-hover { position: absolute; height: 100%; width: 100%; top: 100%; bottom: 0; left: 0; right: 0; text-align: center; color: #fff; background: rgba(0,0,0,0.4); padding-top: 25%; transition: 0.3s ease;}
+.cars-hover a{ color:#fff;}
+.car-img {position: relative; overflow:hidden; z-index:0;}
+.car-img:hover .cars-hover{ top:0;}
+.driver-img img { width: 100%;}
+.driver-content { position: absolute; display: table-cell; bottom: 30px; left: 0; right: 0; text-align: center;}
+.driver-content p strong {font-family: 'Raleway-Bold';}
+.driver-content p { font-size: 20px; color: #fff; font-family: 'Raleway';}
+.driver-content a {display: block; width: 100%; max-width: 180px; margin: 0 auto; height: 50px; line-height: 50px; text-transform: uppercase; color: #141414; background: #fff; border-radius: 100px; font-family: 'Montserrat-Bold';}
+/*end*/
+
+/*leasing-programs*/
+.leasing-heaidng h4:after {position: absolute; height: 7px; width: 65px; content: ''; background: #e2e2e2; bottom: 0px;  left: 0; right: 0; margin: auto;}
+.leasing-heaidng h4 {padding: 20px 0; margin: 0; text-align: center; font-size: 20px; color: #2c2f33; font-family: 'Raleway-Bold'; position: relative;}
+.leasing-programs h5 {font-size: 24px; color: #10417c; font-family: 'Raleway-Bold';}
+.leasing-programs {text-align: center; padding: 40px 0 80px;}
+.leasing-programs p {font-size: 12px; color: #667e8e; font-family: 'Raleway';}
+.leasing-programs h5 {font-size: 20px; color: #10417c; font-family: 'Raleway-Bold';}
+.leasing-programs a {font-size: 20px; color: #10417c; font-family: 'Raleway-Bold';}
+/* 
+.leasing-programs a {display: block; width: 100%; max-width: 150px; height: 45px; text-align: center; line-height: 45px; text-transform: uppercase;  color: #fff; background: #667e8e; border-radius: 100px; margin: 0 auto; font-family: 'Montserrat-Bold';}
+ */
+.leasing-programs-area { padding: 60px 0;}
+.schedule:after { content: ''; width: 100%; display: table;}
+.schedule { clear: both; overflow:hidden;}
+.schedule-img {float: left; width: 30%;}
+.schedule-img img{ width:100%;}
+.schedule-content {width:70%; float: left; padding:0px 25px 18px 0px; position: relative; background: #00aeef;    z-index: 0;}
+.schedule-content h5 {margin: 0; font-size: 20px; color: #fff; font-family: 'Raleway-Medium'; padding: 18px 0;}
+.schedule-area {background: #00aeef;}
+.schedule-content p {font-size: 12px; color: #fff; font-family: 'Raleway'; margin: 0;}
+.schedule-btn {position: absolute; width: 135px; height: 40px; line-height: 40px; text-align: center; background: #fff; border-radius: 100px;  text-transform: uppercase; color: #00aeef; top: 0; bottom: 0; font-family: 'Montserrat-Bold'; font-size: 10px; display: block; margin: auto; right: 10px;}
+.schedule-content .container { position: relative;}
+.schedule-content:after {position: absolute; content: ''; height: 100%;    width: 80px; background: #00aeef; top: 0; left: -35px; transform:skewX(-22deg); z-index: -1;}
+.how-it-work:after { content: ''; width: 100%; display: table;}
+.how-it-work h5 {color: #2c2f33; font-family: 'Raleway-Bold'; font-size: 20px; padding: 30px 0; margin: 0;}
+.how-it-work { text-align: center;}
+.slelct-car h4 {font-size: 20px; color: #10417c; font-family: 'Raleway-Bold'; margin: 0; padding: 20px 0;}
+.slelct-car p {font-size: 12px; color: #667e8e; font-family: 'Raleway'; margin: 0;}
+.slelct-car.apply {position: relative;}
+.slelct-car.apply:after {position: absolute; content: ''; background: url(../images/right-arrow.png) no-repeat; height: 45px; width: 90px; right: -60px; top: 25px; background-size: 100%;}
+.slelct-car.apply:before {position: absolute; content: ''; background: url(../images/left-arrow.png) no-repeat; height: 45px; width: 90px; left: -40px; top: 25px; background-size: 100%;}
+.slelct-car.apply { position: relative;}
+/*end*/
+/*testimonial*/
+.clients-testimonial { text-align: center;}
+.what-clietn-says { background: #f7f7f7; padding: 60px 0; overflow:hidden;}
+.clients-testimonial {margin: 50px 10px; background: #fff; padding: 20px 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);}
+.clients-testimonial .icon img{ width:150px; height:150px; margin:0 auto;}
+.clients-testimonial h4 {font-size: 20px; color: #10417c; font-family: 'Raleway-Bold';}
+.clients-testimonial h4 span {display: block; font-size: 14px; font-family: 'Raleway'; color: #667e8e;}
+.clients-testimonial i { color: #9bd5bf;}
+.clients-testimonial p {font-size: 12px; color: #667e8e; font-family: 'Raleway'; display:inline;}
+/*end*/
+
+/*faq*/
+.faq h4 {margin: 0; font-size: 16px; color: #10417c; font-family: 'Raleway-Bold'; line-height: 25px; padding: 10px 0;}
+.faq p { font-size: 14px; color: #667e8e; font-family: 'Raleway'; }
+.faq ul li i {padding: 0 10px 0 0;}
+.faq ul {list-style: none; padding: 0; font-size: 14px; color: #667e8e; font-family: 'Raleway';}
+.faq { padding: 30px 0;}
+.faq-area { padding: 30px 0;}
+/*end*/
+
+/*slider*/
+.blog ul {padding: 40px 0;}
+.blog-item {box-shadow: 0 5px 15px rgba(0,0,0,0.2); background: #fff; margin: 20px 10px; text-align:center; padding-bottom: 10px;}
+.blog-img img { width: 100%;}
+.blog { background: #f7f7f7; padding: 60px 0; position:relative;}
+.blog-item h5 {color: #10417c; font-size: 16px; font-family: 'Raleway-Bold'; padding: 10px 0 0;}
+.blog-item p { font-size: 14px; color: #667e8e; font-family: 'Raleway'; padding: 0 5px; margin: 0; max-height: 100px; overflow: hidden;    line-height: 25px;}
+.blog-item a {display: block; width: 100%; max-width: 117px; margin: 10px auto; text-align: center; line-height: 30px; height: 30px; background: #667e8e;color: #fff; text-transform: uppercase; font-family: 'Montserrat-Bold'; font-size:10px;}
+span#prev a, span#next a {opacity: 0;}
+span#prev, span#next {height: 60px; width: 30px; background: #9bd5bf; display: block; font-size: 44px; position: absolute; bottom: 35%; left: 0; text-align:center; z-index:999;}
+span#next{ right:0; left:inherit; transform:rotatey(180deg)}
+span#prev img, span#next img { position: absolute;}
+.blog-img img {width: inherit; height: 100% !Important; margin: 0 auto;}
+.blog-img {height: 150px;}
+/*end*/
+
+/*contact*/
+.contant-form .form-field textarea {min-height: 190px; width: 100%; padding: 15px; margin: 10px 0; border: 1px solid #c3c3c3; border-radius: 8px; max-height:190px;}
+.contant-form .form-field input { width: 100%; height: 50px;  text-align: center; margin: 10px 0; border: 1px solid #c3c3c3;  border-radius: 8px;}
+.send-btn { padding: 30px 0 0; clear: both;}
+.send-btn input { width: 160px; height: 45px; background: #9bd5bf; border: 0; color: #fff; text-transform: uppercase; margin: 0 auto; display: block; font-family: 'Montserrat-Bold'; border-radius:8px;}
+.contant-form { padding: 40px 0;}
+input:focus, textarea:focus{ outline:none; box-shadow:none;}
+.contact-detail { border-top: 1px solid #c3c3c3;  padding: 40px 0;}
+.contact-detail-item p { font-size:13px; margin: 0; padding: 40px 0 0; color: #667e8e;}
+.contact-detail-item p a { display: block; color: #9bd5bf; font-size: 13px;}
+.contact-detail-item { text-align: center;}
+.follow-us ul li a {display: block; display: block; height: 60px; width: 60px; text-align: center; line-height: 60px; font-size: 20px; background: #ccc;  border-radius: 100%;  color: #fff;}
+.follow-us ul li { display: inline-block; padding: 0 10px;}
+.follow-us ul { text-align: center; list-style: none; padding: 20px 0; margin: 0;}
+.follow-us ul li a.twitter { background: #55acee;}
+.follow-us ul li a.facebook { background: #558bee;}
+.follow-us ul li a.google { background: #fc5b4d;}
+.contect-area { padding: 60px 0 0;}
+.send-btn input {background: #00b2df !Important; border: 0 !Important; color: #fff !Important;}
+/*end*/
+
+/*footer*/
+.footer-links ul li a {color: #fff; padding: 20px 5px; text-transform: uppercase; display: block; font-size: 12px;}
+.footer-links { background: #667e8e;}
+.footer-links ul { list-style: none; padding: 0; margin: 0; text-align:center;}
+.footer-links ul li {display: inline-block;}
+.copy-rights {background: #5f7584; padding: 14px 0;}
+.copy-rights p {margin: 0; color: #fff; text-align: center; font-size: 12px;}
+/*end*/
+
+.cal-popup li p {text-align: center;}
+.cal-popup li p strong {color: #9bd5bf;}
+.cal-popup li p span button {border: 1px solid #10417c; text-transform: uppercase; color: #10417c; font-family: 'Montserrat-Bold'; background-color: #FFF; padding: 6px 11px; transition: all .3s ease-in; -webkit-transition: all .3s ease-in; -moz-transition: all .3s ease-in;}
+.cal-popup li p span button:hover, .modal-footer li p span button:active, .modal-footer li p span button:focus{background-color: #10417c; background-image:none !important; color: #FFF; box-shadow: none; outline: none;}
+.cal-popup {padding-left: 0; background-color: #f7f7f7;}
+
+/*model*/
+.model .row { border-bottom: 1px solid #ddd; margin: 0; padding:15px;}
+.model { background: #fff; padding: 20px 0;}
+.pop-cars-content p {color: #10417b; font-size: 14px; text-transform: uppercase; font-family: 'Montserrat-Bold';}
+.pop-cars-content h5 {color: #9bd5bf; font-size: 14px;}
+.pop-cars-content h5 strong {font-size: 16px; font-family: 'Montserrat-Bold';}
+.pop-cars-btn a {width: 100%; height: 45px; line-height: 45px; display: block; text-align: center; border: 1px solid #14437d;  color: #14437d; text-transform: uppercase;  font-family: 'Montserrat-Bold';  border-radius: 3px; margin:0 auto;}
+.model { width: 100%; max-width: 600px; margin: 0 auto;}
+.modal-dialog { position: absolute; left: 0; right: 0; top: 20px; margin: auto; max-width:600px;}
+.close , .close :hover{display: block; height: 40px; position: static; width: 100%;   text-align: right; padding-right: 20px !Important; font-size: 30px; opacity: 1;    background: #9bd5bf !Important; color: #fff; margin-bottom: 20px; border-radius: 0;}
+.model form {padding: 20px;}
+.form-field label, .formpannel p label {width: 100%; display: block; padding: 5px 0; font-size: 15px;}
+.form-field {padding: 5px 0;}
+
+.form-field input[type="button"], .form-field input[type="submit"], .form-field input[type="reset"], .form-field input[type="button"]:hover, .form-field input[type="submit"]:hover, .form-field input[type="reset"]:hover, .formpannel p input[type="submit"], .formpannel p input[type="reset"], .formpannel p input[type="submit"]:hover, .formpannel p input[type="reset"]:hover {width: 120px;    display: inline-block;background: #fff;color: #10417c; font-size: 16px;    height: 40px; border: 2px solid #10417c; text-transform: uppercase;    font-weight: bold; border-radius: 20px; margin: 15px 10px 0 0;}
+
+.form-field input, .formpannel p input, .formpannel p select, .formpannel p textarea {width: 100%;}
+
+
+#calcpopup .form-field label, .formpannel p label {width: 40%; display: block; padding: 5px 0; font-size: 15px;}
+#calcpopup .form-field {padding: 5px 0;}
+
+#calcpopup .form-field input[type="text"]{width: 120px;    display: inline-block;background: #fff;color: #10417c; font-size: 16px;    height: 40px; border: 2px solid #10417c; text-transform: uppercase;    font-weight: bold; border-radius: 20px; margin: 15px 10px 0 0;}
+
+#calcpopup .form-field input, .formpannel p input, .formpannel p select, .formpannel p textarea {width: 60%;}
+
+#bodyArea h2 {margin: 0; font-size: 20px; text-transform: uppercase;   padding: 0 0 10px;}
+/*end*/
+
+/*gallery*/
+.car-img ul {position: absolute; top: 0; left: 0; padding: 0 10px; font-size: 30px; width: 100%; height: 40px; bottom: 0; color: #000; margin: auto 0; transition:0.3s linear; opacity:0;}
+.car-img ul li {width: 50%; float: left; color:#fff;}
+.car-img:hover ul{ opacity:1;}
+.car-img ul li:last-child{text-align:right;}
+#see-ava .modal-dialog{margin: auto; top:15px; bottom:0;}
+#see-suv .modal-dialog{height: 310px; margin: auto; top: 0; bottom:0;}
+#see-avaa .modal-dialog{top: 15px;  margin: auto; bottom:0;}
+#see-ava, #see-suv, #see-avaa{ height:100%; width:100%;}
+.modal-lg {max-width: 900px !important; width: 100%;}
+.item img {width: 100%;}
+.left.gallery {left: 10px;}
+.right.gallery {right: 10px;}
+.gallery {position: absolute; font-size: 50px; height: 50px; top: 0;    bottom: 0; margin: auto 0; color: #FFF;  opacity: 0.7;}
+ul#slider1, ul#slider2 {padding: 0; margin: 0;}
+a.carousel-control i {font-size: 35px; top: 0; bottom: 0; position: absolute; height: 40px; margin: auto;}
+/*end*/
+
+/*silk*/
+button.slick-next.slick-arrow, button.slick-prev.slick-arrow { height: 40px; width: 40px; font-size: 0;    background: rgba(0, 0, 0, 0.61);  border-radius: 100%; position: absolute;    top: 0;  bottom: 0; margin: auto; right: 0; z-index:9;}
+button.slick-next.slick-arrow:after, button.slick-prev.slick-arrow:after {  position: absolute; content: '>'; color: #fff; font-size: 25px; top: 0;    bottom: 0; left: 0; right: 0; margin: auto; text-align: center; line-height: 40px;}
+button.slick-prev.slick-arrow{ right:inherit; left:0;  z-index: 9;    transform: rotate(180deg);}
+.form-field textarea { width: 100%; min-height: 80px;}
+/*desciption*/
+.description-area {padding: 10px 20px; border-bottom: 1px solid #dbe3eb; text-align: left; font-family: 'OpenSans';}
+.description-area p {line-height: 1.714285714; color: #444; margin:0;}
+/*end*/
+
+/*changes*/
+.btn-default{ margin-top:10px;}
+.pop-cars-btn { display: inline-block; vertical-align: middle; padding: 10px 0; width:49%;  margin-top: 20px;}
+.news-letter-area { display:block; width: 100%; position: relative; vertical-align: middle;     margin: 10px 0;}
+.news-letter-area input {height: 45px; width: 100%; border: 1px solid; padding-left: 15px;}
+.news-letter-area input[type="submit"] {position: absolute; right: 0; top: 0; height: 45px;  width: 70px; border-radius: 0; border: 1px solid; color: #14437d !important; border-color: #333; font-weight: 600;}
+.pop-cars-btn input {width: 100%; height: 45px; line-height: 45px !important; display: block; text-align: center; border: 1px solid #14437d !important; color: #14437d !important; text-transform: uppercase; font-family: 'Montserrat-Bold'; border-radius: 3px !important; margin: 0 auto; padding: 0 !important; background: transparent !important;}
+
+.car-listing dl dt { text-align: left; color: #9bd5bf; font-weight: 100;}
+.description-area h2 { margin: 0; font-size: 25px;}
+.description-area h2 small { color: #18467f;  text-transform: uppercase; font-size: 20px;}
+.car-detail-listing { padding:30px 0; border-bottom: 1px solid #e5e5e5;}
+.car-detail-listing dl { margin: 0;}
+
+/*end*/
+
+input.error {outline: 1px solid red;}
+label.error {color:red;font-size:12px !important;	}
+#sucess_book {color:red;font-size:12px !important;	}
+#sucess_drive {color:red;font-size:12px !important;}
+#sucess_drive1 {color:red;font-size:12px !important;}
+
+
+/*changes*/
+center.mid-responce { height: 700px; display: table; text-align: center;  width: 100%;}
+.responce { display: table-cell; vertical-align: middle; background: #f1f1f1;}
+.pop-cars-btn button {width: 100%; height: 45px; display: block; text-align: center; border: 1px solid #14437d; color: #14437d; text-transform: uppercase; font-family: 'Montserrat-Bold'; border-radius: 3px; margin: 0 auto; background: transparent;}
+#pdfform-submit { z-index: 1051;}
+.pdfform .form-filed button { width: 120px; background: #9bd5bf; border: 0; color: #fff; text-transform: uppercase;  letter-spacing: 1px;}
+.pdfform .form-filed { padding: 5px 0;}
+.pdfform .form-filed input { width: 100%; height: 35px; border-radius: 0;}
+.pdfform .form-filed label { width: 100%; display: block;}
+#pdfform-submit .modal-dialog {margin: auto; width: 600px; height: 624px; position: absolute; top: 0; bottom: 0; left: 0; right: 18px;}
+.more-info button.btn.btn-default {background: #f04343; color: #fff; padding: 0; border: 0; display: block; margin: 15px auto;    position: absolute;
+    top: -29px;
+    right: -19px;
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+    font-size: 38px;}
+.calc_btn{ color: #9bd5bf !important; }
+.modal-content a.right.carousel-control i {
+    right: 40px;
+}
+/*end*/
+/*body.modal-open {
+    overflow: hidden;
+    position: fixed;
+}
+*/	
+@media (max-width:1199px){
+	.platinum-content{ top:20px;}
+	.schedule-btn{ right:330px; bottom:10px;}
+	.schedule-btn { right: 0;  bottom: 10px;  left: inherit;}
+	
+	
+	}
+@media (max-width:991px){
+	.price p sup{ top:15px;}
+	.schedule-content h5{ padding:10px 0;}
+	.schedule-content p{ max-width:260px;}
+	.slelct-car.apply:before { left: -50px; background-size: 70%;}
+	.slelct-car.apply:after { right: -100px; background-size: 70%;}
+	.contact-detail{ padding:40px 0;}
+	.footer-links ul li a { padding: 20px 5px;}
+	.platinum-content p strong{ font-size:20px;}
+	.platinum-content p{ font-size:15px;}
+	.white-btn{ height:40px; line-height:40px; width:130px;}
+	.platinum-content {top: 10px;}
+	.drive-btn {padding: 10px;}
+	.schedule-btn { right: 0; bottom: 0; left: inherit;}
+	
+	
+}
+
+@media (max-width:767px){
+	.logo { width: 200px; float: none; clear: both; padding-left: 15px;}
+	header {padding: 12px 0;}
+	.menu_area nav ul li {padding:0; display: block; border-bottom: 1px solid #eee;}
+	.menu_area nav ul li a{padding: 15px 10px; display: block;}
+	button.toogle, button.toogle:hover, button.toogle:active {display: block; position: absolute; right: 15px; top: 19px; width: 50px; height: 40px; background: #97cfb6; border: 0; font-size: 25px; padding: 0; margin: 0; color: #fff; cursor:pointer;}
+	.menu_area nav ul{ display:none;}
+	.platinum_vehicle {clear: both;}
+	.banner_content h1{ font-size:30px;}
+	ul.address:before, ul.address:after{ display:none;}
+	ul.address{ display:block;}
+	.schedule-img img { width: 100%;}
+	.schedule-img { float: none; width: 100%; display: block; margin: 0 auto;}
+	.schedule-content {width: 100%; text-align:center; padding:20px 10px 20px 10px;}
+	.slelct-car.apply:before, .slelct-car.apply:after { display:none;}
+	.slelct-car { padding: 20px 0;}
+	.faq { padding: 20px 0 0;}
+	.footer-links ul li a {padding: 10px 15px; border-bottom: 1px solid #7d909c;}
+	.footer-links ul li { display: block; text-align: left;}
+	.available-cars-content { text-align: center;}
+	.available-cars-img img { margin: 0 auto;}
+	.contact-detail-item p{ padding:20px 0;}
+	.menu_area { width: 100%; float: none; clear: both;}
+	.menu_area nav ul{ text-align:left; position: absolute; width: 100%;
+    background: #fafafa; z-index: 99999;}
+	.schedule-area { clear: both; overflow: hidden;}
+	.schedule-content:after{ display:none;}
+	.container {width:100%;}
+	.schedule-btn { position: static; display: block; margin: 10px auto 0;}
+	.schedule-content p {margin: 0 auto;}
+	}
+	
+	
+
+@media (max-width:750px){
+ 	#contact, #blog, #faq-area, #client, #lease-program, #lease-to-own, #lease,	#footer, #drive{display:none;} 
+	#man, #slider{ opacity:0; transition:0.3s linear;}
+  #contact.activebox, #blog.activebox, #faq-area.activebox, #client.activebox, #lease-program.activebox, #lease-to-own.activebox, #lease.activebox, #footer.activebox, #drive.activebox{
+    display: block !important;
+  }
+#home {
+    max-height: inherit;
+    overflow: inherit;
+    display: block !important;
+}
+	
+}
+
+@media (max-width:704px){
+	ul.address li{ border:0; padding:5px;}
+	.platinum-content p { font-size: 12px; margin:0;}
+	.platinum-content {top: 5px;}
+	.white-btn {height: 30px; line-height: 30px; width: 100px; font-size:10px;}
+	}
+	
+@media (max-width:640px){
+	.banner_content h1{ font-size:24px;}
+	.browse_car { display: block;  width: 210px;  height: 50px; line-height: 50px; font-size: 14px;}
+	.pop-cars-btn a { width: 100%; margin: 0;}
+	.news-letter-area { display: block; margin: 0 auto; width: 100%; margin: 10px 0;}
+	.pop-cars-btn input{ width:100%;}
+	#pdfform-submit .modal-dialog {width: 100%; height: inherit; top: 20px; max-width: 335px;}
+	.modal-title{ font-size:14px;}
+	.more-info button.btn.btn-default{ margin:0 10px 0 0;}
+  	.modal-dialog{padding: 20px;}
+	}
+
+
+@media(max-width:550px){
+	.banner_content h1{ padding:10px 0;}
+	.cars_on_leas .col-xs-6 {width: 100%; clear: both;}
+	.section_content {padding: 0 15px;}
+	.platinum-content p strong {font-size: 16px; margin:4px 0;}
+
+	}
+
+@media(max-width:480px){
+	ul.address li{ font-size:12px;}
+	.banner_content h1{ font-size:20px;}
+	.browse_car { width: 165px; height: 40px; line-height: 40px;  font-size: 12px;}
+	.schedule-btn { position: static; display: block; margin: 10px auto 0;}
+	.schedule-content{ text-align:center;}
+	.schedule-content p { max-width: 100%;}
+	.platinum_vehicle img {height: 115px;}
+	#see-ava, #see-suv, #see-avaa{ overflow-y:scroll; height:auto; width:auto;}
+	#see-ava .modal-dialog, #see-suv .modal-dialog, #see-avaa .modal-dialog{height: auto; margin: auto; top:30px; bottom:0;}
+	.cars-gallery .col-xs-6 {width: 100%; clear: both;}
+	ul#slider2 li, ul#slider1 li { margin: 0 !important;}
+	.bx-wrapper { width: 310px; margin:0 auto; min-height:410px;}
+	#client .bx-wrapper { width: 240px; margin:0 auto; }
+	.clients-testimonial{ box-shadow:none;}
+	.banner_content {position: static; background: #00b2df; padding: 10px 0 30px;}
+	.banner_content h1 { font-size: 20px; padding: 30px 0;}
+	.what-clietn-says, .blog {background: url(https://www.caymanleasing.com/wp-content/themes/caymanleasing/images/ajax-loader.gif) no-repeat; background-position: center;}
+	}
+
+@media(max-width:420px){
+	.banner_content h1{ font-size:18px; padding-top:40px;}
+	.banner_img { height: 250px;}
+	.banner_img img { height: 100%;  width: 100% !Important;
+    margin: 0 !important;}
+	.price p .amount{ font-size:34px;}
+	.platinum-content p { margin: 0; line-height: normal;}
+	.platinum-content {top: 5px;}
+	.model .col-xs-4 { clear: both;  width: 100%; text-align: center; padding: 10px 0;}
+	.cars-img img { margin: 0 auto;}
+	.pop-cars-btn a { margin: 0 auto;}
+	.model .col-xs-4{ padding:5px 0;}
+	.pop-cars-btn a, .pop-cars-btn button {height: 35px;line-height: 35px; font-size: 12px; padding:0;}
+	.pop-cars-btn { display: block; margin: 10px 0; width:100%;}
+	ul.address li {font-size: 9px;}
+	}
+	
+@media(max-width:360px){
+	.test-btn span{ padding:0 4px;}
+	.drive-btn { padding: 20px 10px;}
+	.platinum_car h4{ font-size:20px;}
+	.section_content h3{ font-size:20px;}
+	.price p sup { top: -8px;  display: block;}
+	.follow-us ul li{ padding:0 4px;}
+	ul.address li i{ font-size:12px;}
+	.banner_content ul li{ padding:5px;}
+	}

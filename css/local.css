@@ -1,0 +1,153 @@
+section.page-not-found-area, section.page-archieves-area {
+    margin-top: 10px;
+    margin-bottom: 74px;
+    text-align: center;
+}
+.notice-box {
+    border-radius: 20px;
+    overflow: hidden;
+	background-color: #FFF;
+}
+div#announcementmodal .modal-dialog .modal-content {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none;
+}
+/* #lease-to-own, #lease-program, .schedule-area, #blog, #client, #faq-area {
+    display: none;
+} */
+
+#announcementmodal .modal-dialog {
+    max-width: 800px !important;
+    width: calc(100% - 60px) !important;
+}
+#announcementmodal .modal-body { padding: 0px; }
+#announcementmodal .modal-body img{ width:100%; margin-bottom:0px; }
+#announcementmodal .modal-body .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-block;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    padding: 0px !important;
+    border-radius: 50%;
+    background: none!important;
+    margin-bottom: 0;
+}
+#announcementmodal .modal-body .button-okay{
+    background: #00a99d;
+    color: #fff;
+    padding: 10px 35px;
+    font-size: 18px;
+}
+#announcementmodal .modal-body .popupcontent{
+	font-size:16px;
+	color: #ff1100;
+}
+div#home:before{ display:none; }
+
+.formpannel p span{ width:100%; display:block; margin-bottom:5px; }
+.formpannel p input[type="checkbox"] { width: auto; margin-right:8px; }
+a.email-info {
+    text-transform: capitalize;
+}
+.slelct-car.apply.apply_pay:before {
+    display: none;
+}
+.how-it-work .col-sm-3 {
+    width: calc(100%/5);
+}
+.how-it-work {
+    display: flex;
+    flex-flow: wrap;
+}
+.how-it-work img {
+    height: 70px;
+    width: auto;
+}
+
+#announcementmodal .schedule-form [data-name="email"] {
+    position: relative;
+}
+
+.schedule-form input.cu-form-control {
+    padding-left: 34px;
+}
+
+#announcementmodal .modal-body .close:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+.schedule-form [data-name="email"]::before {
+    content: '';
+    background-image: url(https://www.caymanleasing.com/wp-content/themes/caymanleasing/images/email.png);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 8px;
+}
+
+ul.address li.heading__title {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    padding-bottom: 0;
+}
+
+ul.address:after {
+    height: 80px;
+    width: 58px;
+    left: -28px;
+}
+
+ul.address:before {
+    height: 80px;
+    width: 58px;
+    right: -28px;
+}
+
+@media(max-width:480px){
+	ul.address li.heading__title{
+		display:none;
+	}
+}
+
+@media (max-width: 991px) and (min-width:767px){
+    .slelct-car.apply:before {
+        left: -32px !important;
+    }
+    .slelct-car.apply:after {
+        right: -78px !important;
+    }
+    .apply_new:after {
+        background-size: 70% !important;
+    }
+}
+
+@media (max-width: 767px){
+	#announcementmodal .modal-dialog {
+        width: 100% !important;
+    }
+	.notice-box {
+		border-radius: 20px;
+    }
+}
+
+@media(min-width:481px){
+	a.inventory__btn{
+		display:none;
+	}
+}
+
+
+@media(max-width:1199px){
+    div#home.banner .banner_img{
+        margin-top:0 !important;
+    }
+}
